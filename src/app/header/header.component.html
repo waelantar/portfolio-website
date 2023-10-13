@@ -1,0 +1,16 @@
+<div class="header">
+  <a href="#" class="logo">Wael.</a>
+  <div
+    [ngClass]="{ 'bx bx-menu': toggle, 'bx bx-x': !toggle }"
+    id="menu-icon"
+    class="bx bx-menu"
+    (click)="clickEvent()"
+  ></div>
+  <nav class="navbar" [ngClass]="{ active: !toggle }" (click)="clickEvent()">
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+    <a routerLink="/education" routerLinkActive="active">Education</a>
+    <a routerLink="/skills" routerLinkActive="active">Skills</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+  </nav>
+</div>
